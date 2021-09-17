@@ -1,10 +1,19 @@
 <div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="bg-dark p-4">
-        <h4 class="text-white">Gra memory</h4>
+        <h4 class="text-white"
+        [routerLink]="['/main']"
+        [routerLinkActive]="'active'"
+        >Gra memory</h4>
         <span class="text-muted">O nas</span>
         <span class="text-muted">Sprzedaż</span>
         <span class="text-muted">Kontakt</span>
+        <span>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="assets/img/search.png" width="20" height="20" alt="Memory"></button>
+          </form>
+        </span>
       </div>
     </div>
     <nav class="navbar navbar-dark bg-dark">
