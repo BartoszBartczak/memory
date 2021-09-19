@@ -1,13 +1,18 @@
 <div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="bg-dark p-4">
-        <h4 class="text-white"
-        [routerLink]="['/main']"
-        [routerLinkActive]="'active'"
-        >Gra memory</h4>
-        <span class="text-muted">O nas</span>
-        <span class="text-muted">Sprzedaż</span>
-        <span class="text-muted">Kontakt</span>
+        <h4 class="text-white">Gra memory</h4>
+        <span class="text-muted">
+          <a [routerLink]="['/about-us']">
+          O nas</a></span>
+        <span class="text-muted">
+          <a [routerLink]="['/about-us']"
+        [routerLinkActive]="'active'">
+          Sprzedaż</a></span>
+        <span class="text-muted">
+          <a [routerLink]="['/buy']"
+        [routerLinkActive]="'active'">
+          Kontakt</a></span>
         <span>
           <form class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
