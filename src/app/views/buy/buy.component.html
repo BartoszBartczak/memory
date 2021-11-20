@@ -1,8 +1,104 @@
-<div class="card mb-3">
-    <img class="card-img-top" src="assets\img\psiaparka_gliwice_moskaphotography.com-10.jpg" alt="Card image cap" width="300px" height="500px">
-    <div class="card-body">
-      <h5 class="card-title">Onas</h5>
-      <p class="card-text">.....</p>
-      
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Imię i nazwisko</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Twoje imię i nazwisko">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Adres dostawy</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Twój adres">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Ilość</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Podaj proszę ilość produktów">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">E-mail</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Podaj proszę e-mail">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1">Nr telefonu</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Podaj proszę telefon">
+  </div>
+  <button type="button" id="forum-button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Przeczytaj regulamin
+  </button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+       
+        
+        <nav id="navbar-example2" class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#fat">@fat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mdo">@mdo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#one">one</a>
+                <a class="dropdown-item" href="#two">two</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#three">three</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+          <h4 id="fat">@fat</h4>
+          <p>...</p>
+          <h4 id="mdo">@mdo</h4>
+          <p>Llalallal</p>
+          <h4 id="one">one</h4>
+          <p>Lalala</p>
+          <h4 id="two">two</h4>
+          <p>Lalala</p>
+          <h4 id="three">three</h4>
+          <p>Lalal</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Zapoznałem się z regulaminem</button>
+          
+        </div>
+      </div>
     </div>
   </div>
+  
+  
+  <div class="form-check">
+    <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+    <label class="form-check-label" for="invalidCheck3">
+      Zgadzam się z regulaminem
+    </label>
+    <div class="invalid-feedback">
+      Musisz wyrazić zgodę przed kontynuowaniem
+    </div>
+    </div>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { BuyComponent } from './buy/buy.component';
+import { FormComponent } from './form/form.component';
+import { TermsComponent } from './terms/terms.component';
 
 
 
@@ -11,7 +13,9 @@ import { BuyComponent } from './buy/buy.component';
   declarations: [
     MainComponent,
     AboutUsComponent,
-    BuyComponent
+    BuyComponent,
+    FormComponent,
+    TermsComponent
   ],
   imports: [
     CommonModule,

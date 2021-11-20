@@ -1,33 +1,16 @@
-<div class="pos-f-t">
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-dark p-4">
-        <h4 class="text-white">Gra memory</h4>
-        <span class="text-muted">
-          <a [routerLink]="['/about-us']">
-          O nas</a></span>
-        <span class="text-muted">
-          <a [routerLink]="['/about-us']"
-        [routerLinkActive]="'active'">
-          Sprzedaż</a></span>
-        <span class="text-muted">
-          <a [routerLink]="['/buy']"
-        [routerLinkActive]="'active'">
-          Kontakt</a></span>
-          <span class="text-muted">
-            <a [routerLink]="['/buy']"
-          [routerLinkActive]="'active'">
-            Kontakt</a></span>
-        <span>
-          <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="assets/img/search.png" width="20" height="20" alt="Memory"></button>
-          </form>
-        </span>
-      </div>
-    </div>
-    <nav class="navbar navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </nav>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a [routerLink]="['/about-us']">O.Nas</a>
+      </li>
+      <li class="nav-item active">
+        <a [routerLink]="['/buy']">Gra.Memory</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Kontakt</a>
+      </li>
+    </ul>
   </div>
+</nav>
