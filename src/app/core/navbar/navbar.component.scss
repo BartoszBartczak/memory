@@ -4,6 +4,14 @@ body {
     margin-right: 10%;
     margin-bottom: 0%;
     color: white;
+    
+}
+
+#logo {
+    width: 20%;
+    height: 20%;
+    margin-left: 40%;
+    margin-bottom: 5%;
 }
 
 .text-muted {
@@ -17,14 +25,17 @@ body {
     width: 90%;
     font-family: 'Courier New', Courier, monospace;
     display: inline;
+    
 }
 
 .nav-item {
-    margin-left: 70%;
-    margin-right: 60%;
+    margin-left: 40%;
+    margin-right: 15%;
     font-family: 'Courier New', Courier, monospace;
     display: inline;
-    font-size: large;
+    font-size: xx-large;
+    color: black;
+    text-decoration: none;
 }
 
 #navbarSupportedContent {
@@ -32,6 +43,9 @@ body {
     float: right;
 }
 
+a{
+    text-decoration:none;
+    }
 
 
 
