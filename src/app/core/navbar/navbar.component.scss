@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/mellow-yellow');
+
 body {
     margin-left: 10%;
     margin-top: 0%;
@@ -6,6 +8,7 @@ body {
     color: white;
     
 }
+
 
 #logo {
     width: 20%;
@@ -20,22 +23,25 @@ body {
 
 .navbar {
     color: white;
-    margin-left: 5%;
+    margin-left: 40%;
     margin-right: 5%;
     width: 90%;
     font-family: 'Courier New', Courier, monospace;
     display: inline;
-    
+    text-decoration: none;
 }
 
 .nav-item {
-    margin-left: 40%;
-    margin-right: 15%;
-    font-family: 'Courier New', Courier, monospace;
-    display: inline;
-    font-size: xx-large;
+    margin-left: 41%;
+    margin-right: 5%;
+    width: 80%;
+    white-space: nowrap;
+    font-family: 'Mellow Yellow', sans-serif;
+    
+    font-size: 450%;
     color: black;
     text-decoration: none;
+    text-align: center;
 }
 
 #navbarSupportedContent {
@@ -47,6 +53,17 @@ a{
     text-decoration:none;
     }
 
+ ​.nav-item:visited
+    {
+       color: black;
+    }
+
+.nav-item:link
+{
+    color: black;
+}
+
+*{ color: black;  text-decoration: none ; }
 
 
 
